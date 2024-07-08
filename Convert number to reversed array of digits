@@ -1,0 +1,6 @@
+function digitize(n) {
+  return String(n)
+    .split("")   // Split the number into an array of digits (as strings)
+    .reverse()   // Reverse the array
+    .map(Number); // Convert each character back to a number
+  }
