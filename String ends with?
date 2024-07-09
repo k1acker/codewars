@@ -1,0 +1,9 @@
+function solution(str, ending){
+  // TODO: complete
+  var len = ending.length;
+  if (ending != ""){
+    return str.slice(-len) == ending;    
+  } else {
+    return true
+  }
+}
