@@ -1,0 +1,6 @@
+function maps(x){
+  var newX = x.map(function (element){
+    return element *2;
+  });
+  return newX;
+}
