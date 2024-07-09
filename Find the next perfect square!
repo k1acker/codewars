@@ -1,0 +1,10 @@
+function findNextSquare(sq) {
+  // Check if sq is a perfect square
+  if (Math.sqrt(sq) % 1 === 0) {
+    // Calculate the next perfect square
+    let nextSquareRoot = Math.sqrt(sq) + 1;
+    return nextSquareRoot * nextSquareRoot;
+  } else {
+    return -1;
+  }
+}
