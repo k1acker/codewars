@@ -1,0 +1,9 @@
+function accum(s) {
+	return s
+    .split('') // Split the string into an array of characters
+    .map((char, index) => {
+      // Repeat the character based on its position index + 1
+      return char.toUpperCase() + char.toLowerCase().repeat(index);
+    })
+    .join('-'); // Join the segments with a hyphen
+}
