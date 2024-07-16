@@ -1,0 +1,11 @@
+function isIsogram(str){
+  var lowerStr = str.toLowerCase()
+  for(var i = 0; i < str.length-1; i++) {
+    for(var j = i+1; j < str.length; j++){
+      if(lowerStr[i] === lowerStr[j]){
+        return false;
+      }
+    }
+  }
+  return true;
+}
