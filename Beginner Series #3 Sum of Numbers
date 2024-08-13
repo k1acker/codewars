@@ -1,0 +1,18 @@
+function getSum(a, b)
+{
+  if(a<b){
+    var total = 0;
+    while(a <= b){
+      total += a;
+      a++;
+    }
+  }
+  else{
+    var total = 0;
+    while(b <= a){
+      total += b;
+      b++;
+    }
+  }
+  return total;
+}
